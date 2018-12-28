@@ -1,6 +1,13 @@
 spring:
   application:
     name: mailer-service
+  mail:
+    port: 2525
+    username: 439c0d3cabf11b
+    password: c6f2aa5c231235
+    protocol: smtp
+    default-encoding: UTF-8
+    host: smtp.mailtrap.io
 #  jpa:
 #    hibernate:
 #      ddl-auto: update

@@ -53,7 +53,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/**/*.js"
                 ).permitAll()
                 //authenticated requests
-                .anyRequest().hasAnyRole("SUPERADMIN", "ADMIN");
+                .anyRequest().authenticated();
 
         // Custom JWT based security filter
         httpSecurity
